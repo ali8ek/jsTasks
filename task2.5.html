@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var monthName = function(mon){
+        months = ["January", 
+        "February", 
+        "March", 
+        "April", 
+        "May", 
+        "June", 
+        "July", 
+        "August", 
+        "September", 
+        "October", 
+        "November", 
+        "December"];
+        return months[mon.getMonth()];
+        };
+        console.log(monthName(new Date("10/11/2009")));
+        console.log(monthName(new Date("11/13/2014")));
+    </script>
+</body>
+</html>

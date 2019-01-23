@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <input type="text" id="msg" onclick="submit">
+        <button>Отправить</button>
+    </div>
+
+    <script>
+        let submit = document.querySelector('button');
+        let parent = document.querySelector('.parent');
+
+        submit.addEventListener('click', function (event) {
+        // event.preventDefault();
+            let newElem = document.createElement('div');
+            newElem.classList.add('wrap');
+            newElem.textContent = (msg.value);
+            parent.appendChild(newElem, this.lastChild);
+        
+        return msg.value;
+
+        });
+    </script>
+</body>
+</html>

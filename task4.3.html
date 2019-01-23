@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="todo-list">
+
+    </ol>
+
+    <script>
+
+        let tasks = [
+            'Buy lemonade', 
+            'Make toasts', 
+            'Repair car', 
+            'Play games', 
+            'Pet a cat'];
+
+   
+        for (i = 0; i < tasks.length; i++) {
+            let li = document.createElement('li');
+            li.classList.add('task');
+            li.innerHTML = tasks[i];
+            
+            todo-list.insertBefore(li, todo-list.lastChild);
+        };
+   
+    </script>
+</body>
+</html>

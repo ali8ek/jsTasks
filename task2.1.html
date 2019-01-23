@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>       
+        let today = new Date();
+
+        let currentTime;
+        let weekday;
+        
+        let weekdayNames = ['', 'Monday;', 'Tuesday;', 'Wednesday;', 'Thursday;', 'Friday;', 'Saturday;', 'Sunday;'];
+        
+
+        let hours = today.getHours();
+        let minutes = today.getMinutes();
+        let seconds = today.getSeconds();
+        let weekday = today.getDay();
+
+
+        weekday = 'Today is: ' + weekdayNames[today.getDay()];
+        currentTime = ' Current time is: ' + hours + ':' + minutes + ':' + seconds;
+        
+        document.write(weekday); 
+        document.write(currentTime);
+    </script>
+</body>
+</html>
