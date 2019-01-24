@@ -12,12 +12,15 @@
         <div id="cola">Cola 1.5 l. <span class="qty">x 1</span></div>
         <div class="item">Bread<span class="qty">x 2</span></div>
         <div class="item">Cheese<span class="qty">x 1</span></div>
-        <div id="choco">Chocolate bar<span class="qty">x 3</span></div>
+        <div id="item1">Chocolate bar<span class="qty">x 3</span></div>
     </div>
 
     <script>
-        var cola = document.getElementById('cola');
-        cola.remove();
+
+        var elem = document.querySelector("#cola");
+        elem.remove();
+        alert(document.querySelector("#cola").innerHTML); 
+
     </script>
             
 </body>

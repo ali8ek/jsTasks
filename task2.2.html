@@ -9,9 +9,25 @@
 <body>
 
     <script>    
-    arr = ['3', '2', '2', '4', '3']
-    a = arr.reverse() // [ 3, 4, 2, 2, 3]
-    console.log(a);   
+
+
+    
+
+        function reverseNumber ( number ) {
+            var tmp = number.split(',');
+            var tmp1 = [];
+            console.log(tmp);
+            for (let i = tmp.length-1; i >= 0; i--) {
+                tmp1.push(tmp[i]);
+            }
+            return tmp1;
+        }
+        console.log(reverseNumber('3,2,2,4,3'));
+
+
+        
+
+
     </script>
 
 </body>

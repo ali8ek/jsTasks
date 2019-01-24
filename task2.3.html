@@ -8,6 +8,14 @@
 </head>
 <body>
     <script>
+
+        function factorial(n) {
+            return (n != 1) ? n * factorial(n - 1) : 1;
+        }
+
+        alert( factorial(5) );
+
+
         var num1, num2;
         num1 = window.prompt("Input the First integer", "0");
         num2 = window.prompt("Input the second integer", "0");
